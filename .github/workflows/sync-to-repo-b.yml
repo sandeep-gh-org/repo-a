@@ -11,7 +11,7 @@ on:
 
 jobs:
   sync:
-    uses: sandeep-gh-org/centralized-workflows/.github/workflows/sync-repository.yml@main
+    uses: sandeep-gh-org/repo-data-transfer/.github/workflows/sync-repository.yml@main
 
     with:
       target_repository: sandeep-gh-org/repo-b
