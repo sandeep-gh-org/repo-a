@@ -1,5 +1,3 @@
-
-
 name: Sync Repo A to Repo B
 
 on:
@@ -15,11 +13,6 @@ jobs:
 
     with:
       target_repository: sandeep-gh-org/repo-b
-
-      source_path: src
-
-      target_path: src
-
       target_branch: main
 
     secrets:
