@@ -1,0 +1,27 @@
+
+
+name: Sync Repo A to Repo B
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  sync:
+    uses: sandeep-gh-org/centralized-workflows/.github/workflows/sync-repository.yml@main
+
+    with:
+      target_repository: sandeep-gh-org/repo-b
+
+      source_path: src
+
+      target_path: src
+
+      target_branch: main
+
+    secrets:
+      GH_PAT: ${{ secrets.GH_PAT }}
+      GH_USERNAME: ${{ secrets.GH_USERNAME }}
